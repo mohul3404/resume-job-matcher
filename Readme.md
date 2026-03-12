@@ -110,7 +110,7 @@ npm -v     # Should print 9.x.x or higher
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yatishgarg/resume-job-matcher.git
+git clone https://github.com/mohul3404/resume-job-matcher.git
 cd resume-job-matcher
 ```
 
