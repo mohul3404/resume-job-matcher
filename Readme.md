@@ -110,7 +110,7 @@ npm -v     # Should print 9.x.x or higher
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yatishgarg/resume-job-matcher.git
+git clone https://github.com/mohul3404/resume-job-matcher.git
 cd resume-job-matcher
 ```
 
@@ -263,28 +263,108 @@ JD PDF/Text ─┘
 ```json
 {
   "success": true,
-  "name": "John Doe",
-  "email": "john@example.com",
-  "phone": "9876543210",
-  "yearOfExperience": 2,
-  "resumeSkills": ["python", "sql", "react", "aws", "git"],
+  "name": "Mohul Bansal",
+  "email": "bansalmohul@gmail.com",
+  "phone": null,
+  "yearOfExperience": null,
+  "resumeSkills": [
+    "javascript",
+    "java",
+    "html",
+    "css",
+    "react",
+    "tailwind",
+    "express",
+    "sql",
+    "mongodb",
+    "rest api",
+    "git",
+    "vscode",
+    "agile",
+    "jwt",
+    "c"
+  ],
   "matchingJobs": [
     {
       "jobId": "JD001",
-      "role": "Data Analyst",
-      "aboutRole": "You will analyze large datasets...",
+      "role": "enthusiastic and motivated Full Stack Developer",
+      "aboutRole": "We are looking for enthusiastic and motivated Full Stack Developer (Freshers) to join our engineering team through campus hiring. The candidate should have a basic understanding of frontend and backend development, strong problem-solving skills, and a willingness to learn and grow in a fast-paced environment.",
       "salary": null,
-      "experienceRequired": 0,
+      "experienceRequired": null,
       "skillsAnalysis": [
-        { "skill": "python", "presentInResume": true },
-        { "skill": "sql", "presentInResume": true },
-        { "skill": "tableau", "presentInResume": false },
-        { "skill": "excel", "presentInResume": false }
+        {
+          "skill": "javascript",
+          "presentInResume": true
+        },
+        {
+          "skill": "python",
+          "presentInResume": false
+        },
+        {
+          "skill": "java",
+          "presentInResume": true
+        },
+        {
+          "skill": "html",
+          "presentInResume": true
+        },
+        {
+          "skill": "css",
+          "presentInResume": true
+        },
+        {
+          "skill": "react",
+          "presentInResume": true
+        },
+        {
+          "skill": "angular",
+          "presentInResume": false
+        },
+        {
+          "skill": "vue",
+          "presentInResume": false
+        },
+        {
+          "skill": "node.js",
+          "presentInResume": false
+        },
+        {
+          "skill": "mysql",
+          "presentInResume": false
+        },
+        {
+          "skill": "mongodb",
+          "presentInResume": true
+        },
+        {
+          "skill": "aws",
+          "presentInResume": false
+        },
+        {
+          "skill": "azure",
+          "presentInResume": false
+        },
+        {
+          "skill": "gcp",
+          "presentInResume": false
+        },
+        {
+          "skill": "rest api",
+          "presentInResume": true
+        },
+        {
+          "skill": "git",
+          "presentInResume": true
+        },
+        {
+          "skill": "problem solving",
+          "presentInResume": false
+        }
       ],
-      "matchingScore": 50,
+      "matchingScore": 47,
       "matchSummary": "Moderate match",
-      "matchedSkillsCount": 2,
-      "totalRequiredSkills": 4
+      "matchedSkillsCount": 8,
+      "totalRequiredSkills": 17
     }
   ]
 }
