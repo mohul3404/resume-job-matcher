@@ -1,9 +1,15 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
+const fs = require("fs");
 const matchRoute = require("./routes/matchRoute");
 
 const app = express();
+
+// Create uploads directory if it doesn't exist
+if (!fs.existsSync("uploads")) {
+  fs.mkdirSync("uploads", { recursive: true });
+}
 
 // Middleware MUST come BEFORE routes
 app.use(cors());
