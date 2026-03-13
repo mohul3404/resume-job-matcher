@@ -87,7 +87,8 @@ export default function App() {
       formData.append('jdText', jdText.trim())
       if (jdFile) formData.append('jdFile', jdFile)
 
-      const res  = await fetch('/api/match', { method: 'POST', body: formData })
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000'
+const res = await fetch(`${apiUrl}/api/match`, { method: 'POST', body: formData })
       const data = await res.json()
 
       if (!res.ok || !data.success) throw new Error(data.message || 'Matching failed. Please try again.')
