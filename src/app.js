@@ -25,6 +25,11 @@ app.use("/api", (req, res, next) => {
   next();
 }, matchRoute);
 
+// Test route
+app.get("/api/test", (req, res) => {
+  res.json({ success: true, message: "API is working" });
+});
+
 // Catch all handler: send back React's index.html file for any non-API routes
 app.use((req, res) => {
   res.sendFile(path.join(__dirname, "../client/dist/index.html"));
