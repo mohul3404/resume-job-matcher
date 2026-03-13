@@ -6,6 +6,7 @@
     "start": "node src/app.js",
     "dev:api": "node src/app.js",
     "dev:ui": "cd client && npm run dev",
+    "build": "cd client && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
