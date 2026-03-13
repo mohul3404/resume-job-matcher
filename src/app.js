@@ -20,7 +20,7 @@ app.use("/api", (req, res, next) => {
 }, matchRoute);
 
 // Catch all handler: send back React's index.html file for any non-API routes
-app.get("*", (req, res) => {
+app.use("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/dist/index.html"));
 });
 
